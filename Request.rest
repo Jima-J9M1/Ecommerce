@@ -1,0 +1,44 @@
+GET http://localhost:8000/api/hello
+Content-Type: application/json
+
+###
+POST http://localhost:8000/api/signin
+content-type: application/json
+
+{
+    "name":"jima",
+    "email":"ji730@gmail.com",
+    "password":"jima30.com"
+}
+
+###
+POST http://localhost:8000/api/signup
+content-type: application/json
+
+{
+    "name":"jima",
+    "email":"ji730a@gmail.com",
+    "password":"jima30.com",
+    "role":0
+}
+###
+GEt http://localhost:8000/api/signout
+content-type: application/json
+
+###
+GET  http://localhost:8000/api/user/62d5a2b422620df64e02412a
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmQ1YTJiNDIyNjIwZGY2NGUwMjQxMmEiLCJpYXQiOjE2NTgxNjg1MTh9.pZq_Tk2QrKYhw3VSulJfdVA-aEkpWcZB3Nv7aUGFMlU
+content-type:application/json
+###
+POST http://localhost:8000/api/category/create
+content-type:application/json
+
+{
+    "name":"Node js"
+}
+
+###
+POST http://localhost:8000/api/product/create
+Content-Type: multipart/form-data
+
+name
